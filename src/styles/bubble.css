@@ -1,0 +1,112 @@
+@keyframes animate-up {
+    0% {
+        transform: translateY(35px);
+    }
+    100% {
+        transform: translateY(-55%);
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    70% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.bubble-column {
+    position: absolute;
+    bottom: 0px;
+    width: 32px;
+    height: 100%;
+    transform: translateY(0px) translateX(0px) scale(1);
+    transform-origin: center;
+}
+
+.bubble-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0px;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    box-shadow: '0px 5.12123px 6.40154px rgba(0, 0, 0, 0.14), 0px 1.92046px 8.96216px rgba(0, 0, 0, 0.12)';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.bubble-1 {
+    right: 48px;
+    animation: animate-up 2s linear forwards;
+}
+
+.bubble-1 .bubble {
+    background: #8E57FB;
+    animation: scale-down 2s linear forwards;
+}
+
+.bubble-2 {
+    right: 72px;
+    animation: animate-up 2s linear forwards;
+}
+
+.bubble-2 .bubble {
+    background: #FF454A;
+    animation: scale-down 2s linear forwards;
+}
+
+.bubble-3 {
+    right: 96px;
+    animation: animate-up 2s linear forwards;
+}
+
+.bubble-3 .bubble {
+    background: #F7D053;
+    animation: scale-down 2s linear forwards;
+}
+
+.bubble-4 {
+    right: 120px;
+    animation: animate-up 2s linear forwards;
+}
+
+.bubble-4 .bubble {
+    background: #55CF61;
+    animation: scale-down 2s linear forwards;
+}
+
+.bubble-5 {
+    right: 144px;
+    animation: animate-up 2s linear forwards;
+}
+
+.bubble-5 .bubble {
+    background: #7CDDFF;
+    animation: scale-down 2s linear forwards;
+}
